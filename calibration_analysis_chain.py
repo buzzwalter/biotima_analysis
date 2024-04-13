@@ -319,7 +319,7 @@ pfit , pcov = leastsq(mass_func_residual,p_0,args=(np.array(time_data),t),full_o
 
 axs.plot(np.array(time_data)*1e6,t,'.')
 axs.plot(np.array(time_data)*1e6,mass_func(pfit[0],pfit[1],time_data))
-title_string = 'MCP 2.3'
+title_string = "MCP 2.3"
 #title_string = 'MCP ' + mcps[i] + '   a='+"{:.2e}".format(pfit[0]) + ' (amu/$s^2$) '+ '   $t_0$='+ "{:.2e}".format(pfit[1]) + ' (s)'
 axs.set(xlabel='time(us)', ylabel = 'mass($\sqrt{amu}$)', title=title_string)
 print("a={0:.6E} and t_0 = {1:.6E}".format(*pfit))
